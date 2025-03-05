@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "%sveltekit.assets%/*": [
+        "static/*"
+      ]
+    }
+  }
+}

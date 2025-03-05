@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+/*noinspection ALL*/
+@font-face {
+    /* Reference name */
+    font-family: 'Space Grotesk';
+    /* For multiple files use commas, ex: url(), url(), ... */
+    src: url('/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf');
+}
+
+@font-face {
+    /* Reference name */
+    font-family: 'Inter';
+    /* For multiple files use commas, ex: url(), url(), ... */
+    src: url('/Inter/Inter-VariableFont_slnt,wght.ttf');
+}
+
+html, body {
+    @apply w-full h-full;
+    background: black;
+}
+
+/*noinspection ALL*/
+.balanced {
+    @apply max-w-[800px];
+    text-wrap: balance;
+}
+
+.container {
+    @apply  px-4 md:px-8;
+}
+
+h1,h2,h3,h4 {
+    @apply leading-tight font-medium mb-6;
+}
+
+p {
+    @apply leading-relaxed text-xl mb-4 max-w-[600px];
+}
+
+.primary-button {
+    @apply btn uppercase font-bold text-black variant-filled-primary;
+}
+.secondary-button{
+    @apply btn font-semibold text-black variant-filled-primary
+}
